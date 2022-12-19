@@ -1,0 +1,34 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	a {
+		color: #fff;
+		font-size: 1.5rem;
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 4rem;
+		margin-top: 5rem;
+	}
+
+	h2 {
+		color: #fff;
+		font-size: 1.5rem;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 5rem;
+	}
+}
+
+.form {
+	margin-bottom: 7rem;
+}
