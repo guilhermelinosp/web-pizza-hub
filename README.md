@@ -33,7 +33,7 @@ git clone https://github.com/guilhermelinosp/web-pizza-hub.git
 - Start the Application in Development
 
 ```shell
-yarn install && yarn dev
+yarn install && yarn start:dev
 ```
 
 </br>
