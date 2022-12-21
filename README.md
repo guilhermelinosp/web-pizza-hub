@@ -3,10 +3,10 @@
 </br>
 
 <div align="center">
-<p> Web application developed with the objective of being used in pizzerias, it has the creation of the menu and the history of orders. </p>
-</div>
 
-![image 1](/.github/img.png)
+![image 1](/.github/image.png)
+
+</div>
 
 </br>
 
@@ -22,7 +22,7 @@
 - Clone this repository
 
 ```shell
-git clone https://github.com/guilhermelinosx/web-pizza-hub.git
+git clone https://github.com/guilhermelinosp/web-pizza-hub.git
 ```
 
 </br>
@@ -30,8 +30,7 @@ git clone https://github.com/guilhermelinosx/web-pizza-hub.git
 - Start the Application in Development
 
 ```shell
-yarn install
-yarn dev
+yarn install && yarn dev
 ```
 
 </br>
