@@ -1,13 +1,10 @@
-# <div align="center"> Web Pizza Hub </div>
+# <div align="center"> Pizza Hub </div>
 
 </br>
 
 <div align="center">
+
 <p>🚧 It is in Development 🚧</p>
-
-</br>
-
-![image 1](/.github/image.png)
 
 </div>
 
