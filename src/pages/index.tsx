@@ -49,13 +49,13 @@ export default function Home() {
 							type="text"
 							autoCapitalize="none"
 							value={email}
-							onChange={email => setEmail(email.target.value)}
+							onChange={(email) => setEmail(email.target.value)}
 						/>
 						<Input
 							placeholder="Password"
 							type="password"
 							value={password}
-							onChange={password => setPassword(password.target.value)}
+							onChange={(password) => setPassword(password.target.value)}
 						/>
 
 						<Button type="submit" loading={loading}>
@@ -76,7 +76,7 @@ export default function Home() {
 	)
 }
 
-export const getServerSideProps = SSRGuest(async ctx => {
+export const getServerSideProps = SSRGuest(async (ctx) => {
 	return {
 		props: {}
 	}

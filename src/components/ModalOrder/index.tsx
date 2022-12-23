@@ -57,7 +57,7 @@ export const ModalOrder = ({
 				<h2 className={styles.table}>Mesa {order![0].order.table}</h2>
 
 				<div className={styles.orders}>
-					{order!.map(item => (
+					{order!.map((item) => (
 						<section key={item.id} className={styles.items}>
 							<div className={styles.item}>
 								<span>

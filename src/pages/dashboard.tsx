@@ -109,7 +109,7 @@ export default function Dashboard({ ordersProgress, ordersFinalized }: HomeProps
 							</div>
 						) : (
 							<article className={styles.ordersList}>
-								{ordersProgressList.map(order => {
+								{ordersProgressList.map((order) => {
 									return (
 										<section key={order.id} className={styles.items}>
 											<button onClick={() => handleOpenModalView(order.id)}>
@@ -132,7 +132,7 @@ export default function Dashboard({ ordersProgress, ordersFinalized }: HomeProps
 
 					<div className={styles.content}>
 						<article className={styles.ordersList}>
-							{ordersFinalizedList.map(order => {
+							{ordersFinalizedList.map((order) => {
 								return (
 									<section key={order.id} className={styles.items}>
 										<button onClick={() => handleOpenModalView(order.id)}>
@@ -159,7 +159,7 @@ export default function Dashboard({ ordersProgress, ordersFinalized }: HomeProps
 	)
 }
 
-export const getServerSideProps = SSRAuth(async ctx => {
+export const getServerSideProps = SSRAuth(async (ctx) => {
 	const api = setupAPIClient(ctx as any)
 
 	const ordersProgress = await api.get('/orders/readprogress')

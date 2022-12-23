@@ -14,7 +14,7 @@ export const setupAPIClient = (ctx = undefined) => {
 	})
 
 	api.interceptors.response.use(
-		response => {
+		(response) => {
 			return response
 		},
 		(error: AxiosError) => {

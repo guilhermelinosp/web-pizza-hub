@@ -104,7 +104,7 @@ export default function Products({ products, categories }: ProductsHomeProps) {
 							type="text"
 							autoCapitalize="none"
 							value={name}
-							onChange={name => setName(name.target.value)}
+							onChange={(name) => setName(name.target.value)}
 						/>
 
 						<Input
@@ -112,7 +112,7 @@ export default function Products({ products, categories }: ProductsHomeProps) {
 							type="number"
 							autoCapitalize="none"
 							value={price}
-							onChange={price => setPrice(price.target.value)}
+							onChange={(price) => setPrice(price.target.value)}
 						/>
 
 						<Button type="submit">Criar</Button>
@@ -123,7 +123,7 @@ export default function Products({ products, categories }: ProductsHomeProps) {
 					</div>
 
 					<article className={styles.products}>
-						{productsList.map(product => {
+						{productsList.map((product) => {
 							return (
 								<section key={product.id} className={styles.items}>
 									<div className={styles.tag}></div>
@@ -148,7 +148,7 @@ export default function Products({ products, categories }: ProductsHomeProps) {
 	)
 }
 
-export const getServerSideProps = SSRAuth(async ctx => {
+export const getServerSideProps = SSRAuth(async (ctx) => {
 	const api = setupAPIClient(ctx as any)
 
 	const resProd = await api.get('/products')

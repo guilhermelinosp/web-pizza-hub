@@ -77,7 +77,7 @@ export default function Categories({ categories }: HomeProps) {
 							type="text"
 							autoCapitalize="none"
 							value={name}
-							onChange={name => setName(name.target.value)}
+							onChange={(name) => setName(name.target.value)}
 						/>
 
 						<Button type="submit">Criar</Button>
@@ -88,7 +88,7 @@ export default function Categories({ categories }: HomeProps) {
 					</div>
 
 					<article className={styles.categories}>
-						{categoriesList.map(category => {
+						{categoriesList.map((category) => {
 							return (
 								<section key={category.id} className={styles.items}>
 									<div className={styles.tag}></div>
@@ -114,7 +114,7 @@ export default function Categories({ categories }: HomeProps) {
 	)
 }
 
-export const getServerSideProps = SSRAuth(async ctx => {
+export const getServerSideProps = SSRAuth(async (ctx) => {
 	const api = setupAPIClient(ctx as any)
 
 	const { data } = await api.get('/categories')
